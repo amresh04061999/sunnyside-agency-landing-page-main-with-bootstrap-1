@@ -10,11 +10,10 @@
 html,body{
     height: 100%;
 }
-
 body{
     background-color: red($color: #000000);
     font-size: 18px;
-    overflow: hidden;
+    // overflow: hidden;
     
 }
 
@@ -27,3 +26,32 @@ body{
 .primary-font-family{
     font-family: 'Fraunces', serif;
 }
+.text-font-family{
+    font-family: 'Barlow', sans-serif;
+}
+
+// profile image
+.w-80px{
+  width: 80px;
+}
+.h-80px{
+    height: 80px;
+  }
+
+  .h-500px{
+    height: 500px;
+  }
+  .leter-spacing{
+    letter-spacing: 5px;
+  }
+  .fs-7{
+    font-size: 55px;
+  }
+  .w-60{
+    width: 60%;
+  }
+
+
+
+
+ 

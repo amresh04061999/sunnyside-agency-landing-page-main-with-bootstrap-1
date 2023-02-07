@@ -30,4 +30,7 @@ $spacing: (
     margin-top: #{$value}px ;
     margin-bottom: #{$value}px ;
   }
+  .pt-#{$key}{
+    padding-top: #{$value}px ;
+  }
 }
