@@ -16,7 +16,6 @@ body{
     // overflow: hidden;
     
 }
-
 // helper class
 .image-responsive{
     width: 100%;
@@ -43,15 +42,18 @@ body{
   }
   .leter-spacing{
     letter-spacing: 5px;
+    @media (max-width: 576px) {
+      letter-spacing: 3px;
+    }
   }
   .fs-7{
     font-size: 55px;
   }
   .w-60{
     width: 60%;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
-
-
-
-
+  
  
