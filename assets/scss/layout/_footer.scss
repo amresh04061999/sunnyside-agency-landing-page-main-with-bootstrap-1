@@ -1,10 +1,14 @@
 footer{
-    ul{
-        li{
+    .nav{
+        .nav-item{
             cursor: pointer;
-            
             &:hover{
-                color: white;
+                color:  $white !important;
+            }
+            .social-media{
+                &:hover{
+                    background-color: $white !important;
+                }
             }
         }
     }
