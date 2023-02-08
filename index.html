@@ -1,192 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <!-- container -->
-  <div class="container-main d-flex flex-column">
-    <header>
-      <!-- header wrapper -->
-      <div class="header-wrapper d-flex justify-content-between  p-5">
-        <!-- logo  -->
-        <div class="logo">
-          <img src="./assets/images/logo.svg" alt="logo image" class="image-responsive" />
+  <body>
+    <!-- container -->
+    <div class="container-main d-flex flex-column">
+      <header>
+        <!-- header wrapper -->
+        <div class="header-wrapper d-flex justify-content-between p-5">
+          <!-- logo  -->
+          <div class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              alt="logo image"
+              class="image-responsive"
+            />
+          </div>
+          <!-- End logo  -->
+          <!-- navigagitin  -->
+          <!-- desktop -->
+          <ul class="nav text-white fs-4 desktop-manu">
+            <li class="nav-item me-5">About</li>
+            <li class="nav-item me-5">Services</li>
+            <li class="nav-item me-5">Projects</li>
+            <li class="nav-item me-5 active">Contact</li>
+          </ul>
+          <label class="icon-menu text-white fs-3 d-sm-none" for="menu"></label>
+          <!-- mobile view -->
+          <div class="mobile-view d-sm-none">
+            <input type="checkbox" id="menu" class="checkbox d-none" />
+            <ul class="nav text-black fs-4 mobile-manu bg-white text-center">
+              <li class="nav-item me-5">About</li>
+              <li class="nav-item me-5">Services</li>
+              <li class="nav-item me-5">Projects</li>
+              <li class="nav-item me-5 active">Contact</li>
+            </ul>
+          </div>
+          <!-- navigagitin  -->
         </div>
-        <!-- End logo  -->
-        <!-- navigagitin  -->
-        <!-- desktop -->
-        <ul class="nav text-white fs-4	desktop-manu">
-          <li class="nav-item me-5">About</li>
-          <li class="nav-item me-5">Services</li>
-          <li class="nav-item me-5">Projects</li>
-          <li class="nav-item me-5 active">Contact</li>
-        </ul>
-        <div class="menu">
-          <span class="icon-menu text-white fs-3"></span>
+        <div
+          class="text-wrapper d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="text-white primary-font-family">We are creatives</h1>
+          <img
+            src="./assets/images/icon-arrow-down.svg"
+            alt="arrow-icon"
+            class="pt-5"
+          />
         </div>
-        <!-- mobile view -->
-        <ul class="nav text-white fs-4 mobile-manu">
-          <li class="nav-item me-5">About</li>
-          <li class="nav-item me-5">Services</li>
-          <li class="nav-item me-5">Projects</li>
-          <li class="nav-item me-5 active">Contact</li>
-        </ul>
-        <!-- navigagitin  -->
-      </div>
-      <div class="text-wrapper d-flex flex-column justify-content-center align-items-center">
-        <h1 class="text-white primary-font-family">We are creatives</h1>
-        <img src="./assets/images/icon-arrow-down.svg" alt="arrow-icon" class="pt-5" />
-      </div>
-    </header>
-    <main class="flex-grow-1">
-      <!-- first section -->
-      <div class="row d-flex flex-wrap-reverse gx-0">
-        <div class="col-lg-6 d-flex justify-content-center flex-column  align-items-center bg-primary">
-          <div class="text-section w-60">
-            <h2 class="fw-bold text-center text-sm-start fs-7 primary-font-family">Transform your brand</h2>
-            <p class="text-secondary text-center text-sm-start py-2 fs-4 fs">We are a full-service creative agency specializing in helping brands grow fast.
-              Engage your clients through compelling visuals that do most of the marketing for you.</p>
-              <div class="button-botom d-flex justify-content-center align-items-center d-sm-block my-4">
-                <span  class=" fw-bold fs-5 lean-2 primary-font-family cursor-pointer">Learn more</span>
+      </header>
+      <main class="flex-grow-1">
+        <!-- first section -->
+        <div class="row d-flex flex-wrap-reverse gx-0">
+          <div
+            class="col-lg-6 d-flex justify-content-center flex-column align-items-center bg-primary"
+          >
+            <div class="text-section w-60">
+              <h2
+                class="fw-bold text-center text-sm-start fs-7 primary-font-family"
+              >
+                Transform your brand
+              </h2>
+              <p class="text-secondary text-center text-sm-start py-2 fs-4 fs">
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <div
+                class="button-botom d-flex justify-content-center align-items-center d-sm-block my-4"
+              >
+                <span
+                  class="fw-bold fs-5 lean-2 primary-font-family cursor-pointer"
+                  >Learn more</span
+                >
               </div>
-             
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/desktop/image-transform.jpg"
+              width="100%"
+              alt="image-transform"
+            />
           </div>
         </div>
-        <div class="col-lg-6">
-          <img src="./assets/images/desktop/image-transform.jpg" width="100%"
-            alt="image-transform">
+        <!-- end first section -->
+        <div class="row gx-0">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/desktop/image-stand-out.jpg"
+              width="100%"
+              alt="image-stand-out"
+            />
           </div>
-      </div>
-       <!-- end first section -->
-      <div class="row gx-0">
-        <div class="col-lg-6"><img src="./assets/images/desktop/image-stand-out.jpg" width="100%"
-            alt="image-stand-out"></div>
-        <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center bg-primary">
-          <div class="text-section w-60">
-            <h2 class=" fs-7 fw-bold  text-center text-sm-start primary-font-family">Stand out to the right audience</h2>
-            <p class="py-2 fs-4 text-center text-sm-start text-secondary">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
-              we’ll build and extend your brand in digital places. </p>
-              <div class="button-botom d-flex justify-content-center align-items-center d-sm-block my-4">
-                <span  class=" fw-bold fs-5 lean-1 primary-font-family cursor-pointer">Learn more</span>
+          <div
+            class="col-lg-6 d-flex justify-content-center flex-column align-items-center bg-primary"
+          >
+            <div class="text-section w-60">
+              <h2
+                class="fs-7 fw-bold text-center text-sm-start primary-font-family"
+              >
+                Stand out to the right audience
+              </h2>
+              <p class="py-2 fs-4 text-center text-sm-start text-secondary">
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <div
+                class="button-botom d-flex justify-content-center align-items-center d-sm-block my-4"
+              >
+                <span
+                  class="fw-bold fs-5 lean-1 primary-font-family cursor-pointer"
+                  >Learn more</span
+                >
               </div>
-            
+            </div>
           </div>
         </div>
-      </div>
         <div class="row gx-0">
           <!--  Graphic Design-->
           <div class="col-lg-6">
-            <div class="bg-image-graphic d-flex justify-content-center align-items-end pb-5">
-              <div class=" text-section w-50  text-center ">
+            <div
+              class="bg-image-graphic d-flex justify-content-center align-items-end pb-5"
+            >
+              <div class="text-section w-50 text-center">
                 <h3 class="primary-font-family">Graphic Design</h3>
-              <p class="pt-3 fs-5">Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-                potential clients’ attention.</p>
+                <p class="pt-3 fs-5">
+                  Great design makes you memorable. We deliver artwork that
+                  underscores your brand message and captures potential clients’
+                  attention.
+                </p>
               </div>
             </div>
           </div>
           <!--  Photography-->
           <div class="col-lg-6">
-            <div class="bg-image-photography d-flex justify-content-center align-items-end pb-5">
-              <div class="w-50  text-section  text-center">
+            <div
+              class="bg-image-photography d-flex justify-content-center align-items-end pb-5"
+            >
+              <div class="w-50 text-section text-center">
                 <h3 class="primary-font-family">Photography</h3>
-                <p class="pt-3 fs-5 fw-semibold">Increase your credibility by getting the most stunning, high-quality photos that improve your business
-                  image.</p>
+                <p class="pt-3 fs-5 fw-semibold">
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <!-- clinet testimonials -->
-        <div class="p-2 ps-sm-5 ">
+        <div class="p-2 ps-sm-5">
           <div class="row gx-0">
-            <div class="col-lg-12"> 
-              <h5 class="fs-4 fw-bold text-uppercase text-secondary text-center pt-5 leter-spacing">  Client testimonials</h5>
+            <div class="col-lg-12">
+              <h5
+                class="fs-4 fw-bold text-uppercase text-secondary text-center pt-5 leter-spacing"
+              >
+                Client testimonials
+              </h5>
             </div>
           </div>
-          <div class="row gx-0  justify-content-center align-items-center">
-            <div class="col-lg-4 ">
-              <div class="testimonials d-flex flex-column justify-content-center align-items-center p-1  my-4 my-sm-0 p-sm-5">
-                <div class="profile-image w-80px h-80px overflow-hidden rounded-circle">
-                  <img src="./assets/images/image-emily.jpg" alt="profile image" class="w-100 h-auto">
+          <div class="row gx-0 justify-content-center align-items-center">
+            <div class="col-lg-4">
+              <div
+                class="testimonials d-flex flex-column justify-content-center align-items-center p-1 my-4 my-sm-0 p-sm-5"
+              >
+                <div
+                  class="profile-image w-80px h-80px overflow-hidden rounded-circle"
+                >
+                  <img
+                    src="./assets/images/image-emily.jpg"
+                    alt="profile image"
+                    class="w-100 h-auto"
+                  />
                 </div>
-                <p class="text-center py-5 text-secondary fs-5
-                "> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                <p class="text-center py-5 text-secondary fs-5">
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
                 </p>
-                <div class="prfile-text d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="fs-5 fw-bold text-center primary-font-family "> Emily R.</h3>
+                <div
+                  class="prfile-text d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="fs-5 fw-bold text-center primary-font-family">
+                    Emily R.
+                  </h3>
                   <span class="fs-6 text-secondary"> Marketing Director</span>
                 </div>
-            </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="testimonials d-flex flex-column justify-content-center align-items-center p-1 my-4 my-sm-0 p-sm-5">
-                <div class="profile-image w-80px h-80px overflow-hidden rounded-circle">
-                  <img src="./assets/images/image-thomas.jpg" alt="profile image" class="w-100 h-auto">
-                </div>
-                <p class="text-center py-5 text-secondary fs-5
-                "> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-                </p>
-                <div class="prfile-text d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="fs-5 fw-bold text-center primary-font-family">Thomas S.</h3>
-                  <span class="fs-6 text-secondary">Chief Operating Officer</span>
-                </div>
-            </div>
+              </div>
             </div>
             <div class="col-lg-4">
-              <div class="testimonials d-flex flex-column justify-content-center align-items-center p-1 my-4 my-sm-0 p-sm-5">
-                <div class="profile-image w-80px h-80px overflow-hidden rounded-circle">
-                  <img src="./assets/images/image-emily.jpg" alt="profile image" class="w-100 h-auto">
+              <div
+                class="testimonials d-flex flex-column justify-content-center align-items-center p-1 my-4 my-sm-0 p-sm-5"
+              >
+                <div
+                  class="profile-image w-80px h-80px overflow-hidden rounded-circle"
+                >
+                  <img
+                    src="./assets/images/image-thomas.jpg"
+                    alt="profile image"
+                    class="w-100 h-auto"
+                  />
                 </div>
-                <p class="text-center py-5 text-secondary fs-8 fs-5 
-                "> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                <p class="text-center py-5 text-secondary fs-5">
+                  Sunnyside’s enthusiasm coupled with their keen interest in our
+                  brand’s success made it a satisfying and enjoyable experience.
                 </p>
-                <div class="prfile-text d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="fs-5 fw-bold text-center primary-font-family"> Jennie F.</h3>
+                <div
+                  class="prfile-text d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="fs-5 fw-bold text-center primary-font-family">
+                    Thomas S.
+                  </h3>
+                  <span class="fs-6 text-secondary"
+                    >Chief Operating Officer</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="testimonials d-flex flex-column justify-content-center align-items-center p-1 my-4 my-sm-0 p-sm-5"
+              >
+                <div
+                  class="profile-image w-80px h-80px overflow-hidden rounded-circle"
+                >
+                  <img
+                    src="./assets/images/image-emily.jpg"
+                    alt="profile image"
+                    class="w-100 h-auto"
+                  />
+                </div>
+                <p class="text-center py-5 text-secondary fs-8 fs-5">
+                  Incredible end result! Our sales increased over 400% when we
+                  worked with Sunnyside. Highly recommended!
+                </p>
+                <div
+                  class="prfile-text d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h3 class="fs-5 fw-bold text-center primary-font-family">
+                    Jennie F.
+                  </h3>
                   <span class="fs-6 text-secondary"> Business Owner</span>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </div>
         <!-- image section -->
         <div class="row gx-0">
-          <div class=" col-6 col-sm-3"><img src="./assets/images/desktop/image-gallery-milkbottles.jpg"
-              alt="milkbottles-image" width="100%"></div>
-          <div class="col-6 col-sm-3"><img src="./assets/images/desktop/image-gallery-orange.jpg"
-              alt="image-gallery-orange" width="100%"></div>
-          <div class="col-6 col-sm-3"><img src="./assets/images/desktop/image-gallery-cone.jpg"
-              alt="image-gallery-cone" width="100%"></div>
-          <div class="col-6 col-sm-3"><img src="./assets/images/desktop/image-gallery-sugarcubes.jpg"
-              alt="image-gallery-sugarcubes" width="100%"></div>
+          <div class="col-6 col-sm-3">
+            <img
+              src="./assets/images/desktop/image-gallery-milkbottles.jpg"
+              alt="milkbottles-image"
+              width="100%"
+            />
+          </div>
+          <div class="col-6 col-sm-3">
+            <img
+              src="./assets/images/desktop/image-gallery-orange.jpg"
+              alt="image-gallery-orange"
+              width="100%"
+            />
+          </div>
+          <div class="col-6 col-sm-3">
+            <img
+              src="./assets/images/desktop/image-gallery-cone.jpg"
+              alt="image-gallery-cone"
+              width="100%"
+            />
+          </div>
+          <div class="col-6 col-sm-3">
+            <img
+              src="./assets/images/desktop/image-gallery-sugarcubes.jpg"
+              alt="image-gallery-sugarcubes"
+              width="100%"
+            />
+          </div>
         </div>
-    </main>
-    <!-- footer -->
-    <footer class="bg-success p-2 p-sm-5">
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="logo pt-5">
-          <img src="./assets/images/desktop/footer.svg" alt="logo image" width="200px" />
+      </main>
+      <!-- footer -->
+      <footer class="bg-success p-2 p-sm-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="logo pt-5">
+            <img
+              src="./assets/images/desktop/footer.svg"
+              alt="logo image"
+              width="200px"
+            />
+          </div>
+          <ul class="nav fs-5 cursor-pointer py-5">
+            <li
+              class="nav-item me-3 me-sm-5 text-info fs-4 fw-bold cursor-pointer"
+            >
+              About
+            </li>
+            <li class="nav-item me-3 me-sm-5 text-info fs-4 fw-bold">
+              Services
+            </li>
+            <li class="nav-item me-3 me-sm-5 text-info fs-4 fw-bold">
+              Projects
+            </li>
+          </ul>
+          <ul class="nav fs-4 cursor-pointer py-5">
+            <li class="nav-item me-3 me-sm-5">
+              <img
+                src="./assets/images/icon-facebook.svg"
+                alt="fb-image"
+                width="25px"
+                class="social-media"
+              />
+            </li>
+            <li class="nav-item me-3 me-sm-5">
+              <img
+                src="./assets/images/icon-instagram.svg"
+                alt="instagram-image"
+                width="25px"
+                class="social-media"
+              />
+            </li>
+            <li class="nav-item me-3 me-sm-5">
+              <img
+                src="./assets/images/icon-twitter.svg"
+                alt="twitter-image"
+                width="25px"
+                class="social-media"
+              />
+            </li>
+            <li class="nav-item me-3 me-sm-5">
+              <img
+                src="./assets/images/icon-pinterest.svg"
+                alt="pinterest-image"
+                width="25px"
+                class="social-media"
+              />
+            </li>
+          </ul>
         </div>
-        <ul class="nav text-white fs-5 cursor-pointer py-5">
-          <li class="nav-item me-3 me-sm-5 text-info fs-4 fw-bold cursor-pointer">About</li>
-          <li class="nav-item me-3 me-sm-5  text-info fs-4  fw-bold">Services</li>
-          <li class="nav-item me-3 me-sm-5  text-info fs-4  fw-bold">Projects</li>
-        </ul>
-        <ul class="nav text-white fs-4 cursor-pointer	 py-5">
-          <li class="nav-item me-3 me-sm-5"><img src="./assets/images/icon-facebook.svg" alt="fb-image" width="25px"></li>
-          <li class="nav-item me-3 me-sm-5"><img src="./assets/images/icon-instagram.svg" alt="instagram-image" width="25px"></li>
-          <li class="nav-item me-3 me-sm-5"><img src="./assets/images/icon-twitter.svg" alt="twitter-image" width="25px"></li>
-          <li class="nav-item me-3 me-sm-5"><img src="./assets/images/icon-pinterest.svg" alt="pinterest-image" width="25px"></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
