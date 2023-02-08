@@ -1,0 +1,36 @@
+$spacing: (
+  0: 0,
+  1: 10,
+  2: 20,
+  3: 30,
+  4: 40,
+  5: 50,
+  6: 60,
+  7: 70,
+  8: 80,
+);
+@each $key, $value in $spacing {
+  .mt-#{$key}{
+    margin-top: #{$value}px ;
+  }
+  .mb-#{$key}{
+    margin-bottom: #{$value}px ;
+  }
+  .ml-#{$key}{
+    margin-left: #{$value}px ;
+  }
+  .mr-#{$key}{
+    margin-right: #{$value}px ;
+  }
+  .mx-#{$key}{
+    margin-left: #{$value}px ;
+    margin-right: #{$value}px ;
+  }
+  .mx-#{$key}{
+    margin-top: #{$value}px ;
+    margin-bottom: #{$value}px ;
+  }
+  .pt-#{$key}{
+    padding-top: #{$value}px ;
+  }
+}

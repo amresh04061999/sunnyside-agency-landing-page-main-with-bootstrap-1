@@ -1,0 +1,81 @@
+main{
+    .row{
+        .bg-image-graphic{
+            background-image: url("./../../../assets/images/desktop/image-graphic-design.jpg");
+            background-repeat: no-repeat;
+             background-size: 100%;
+            height: 650px;
+        }
+        .bg-image-photography{
+            background-image: url("./../../../assets/images/desktop/image-photography.jpg");
+             background-repeat: no-repeat;
+             background-size: 100%;
+            height: 650px;
+        }
+        .bg-image-graphic{
+            h3{
+                opacity: 0.8;
+                font-weight: 900;
+            }
+            p{
+                opacity: 0.7;
+                font-weight: 700;
+            }
+          
+        }
+        .bg-image-photography{
+            h3{
+                opacity: 0.8;
+                font-weight: 900;
+            }
+            p{
+                opacity: 0.9;
+                font-weight: 700;
+            }
+        }
+
+    }
+    .lean-1{
+        position: relative;
+        z-index: 100;
+        &:hover{
+            // background-color:#b6a023;
+            &::after{
+                background-color:#e4b4ac;
+            }
+        }
+    }
+    .lean-1::after{
+        content: "";
+        position: absolute;
+        background-color:#f9e2de;
+       
+        height: 11px;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        border-radius: 10px;
+        z-index: -1;
+    }
+    .lean-2{
+        position: relative;
+        z-index: 100;
+        &:hover{
+            // background-color:#b6a023;
+            &::after{
+                background-color:#ffd9057a;
+            }
+        }
+    }
+    .lean-2::after{
+        content: "";
+        position: absolute;
+        background-color:#fff6c3;
+        height: 11px;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        border-radius: 10px;
+        z-index: -1;
+    }
+}
