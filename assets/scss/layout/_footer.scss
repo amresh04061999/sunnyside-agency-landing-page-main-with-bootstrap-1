@@ -10,6 +10,12 @@ footer{
                     background-color: $white !important;
                 }
             }
+            .social-media{
+                &:hover{
+                    background-color:$white;
+                }
+            }
+            
         }
     }
 }

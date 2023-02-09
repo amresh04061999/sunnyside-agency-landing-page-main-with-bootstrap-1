@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -348,15 +349,44 @@ header {
     height: 530px;
   }
 }
+header .sidebar {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  left: 100%;
+}
+header .sidebar nav::after {
+  position: absolute;
+  top: 4px;
+  right: 24px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+header .sidebar nav .nav .nav-item.active {
+  background-color: hsl(48deg, 96%, 60%);
+  color: black !important;
+}
+header .sidebar nav .nav .nav-item:hover:not(.active) {
+  background-color: hsla(48deg, 96%, 60%, 0.541);
+  color: black;
+}
+header #menu:checked ~ .sidebar {
+  left: 0;
+}
 @media (max-width: 576px) {
-  header .header-wrapper {
+  header #menu .header-wrapper {
     padding: 1.5rem !important;
   }
 }
-header .header-wrapper .mobile-manu {
+header #menu .mobile-manu {
   display: none;
 }
-header .header-wrapper .checkbox:checked + .mobile-manu {
+header #menu .checkbox:checked + .mobile-manu {
   display: block;
 }
 header .logo img {
@@ -465,6 +495,9 @@ main .row .bg-image-photography p {
   opacity: 0.9;
   font-weight: 700;
 }
+main .image-hover:hover {
+  transform: scale(1.02);
+}
 @media (max-width: 576px) {
   main .testimonials p {
     font-size: 16px !important;
@@ -529,6 +562,9 @@ footer .nav .nav-item:hover {
 }
 footer .nav .nav-item .social-media:hover {
   background-color: white !important;
+}
+footer .nav .nav-item .social-media:hover {
+  background-color: white;
 }
 
 :root {
