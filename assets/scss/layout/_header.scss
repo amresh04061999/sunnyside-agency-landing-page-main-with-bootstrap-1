@@ -6,15 +6,55 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     @media (max-width: 576px) {
-        background-image: url("./../../../assets/images/mobile/image-header.jpg");
+        background-image: url("./../../assets/images/mobile/image-header.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 530px;
     }
-    .header-wrapper {
-        @media (max-width: 576px) {
-            padding: 1.5rem !important;
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        left: 100%;
+        nav::after {
+            position: absolute;
+            top: 4px;
+            right: 24px;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid $white;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid $white;
+        }
+        nav{
+            .nav{
+                .nav-item{
+                    &.active {
+                        background-color: hsl(48deg 96% 60%);
+                        color: $black !important;
+                    }
+                    &:hover:not(.active) {
+                        background-color:hsla(48, 96%, 60%, 0.541);
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    // open menu 
+    #menu {
+        &:checked {
+            ~ .sidebar {
+                left: 0;
+            }
+        }
+        .header-wrapper {
+            @media (max-width: 576px) {
+                padding: 1.5rem !important;
+            }
         }
     }
     .logo {
@@ -25,6 +65,7 @@ header {
             }
         }
     }
+
     .nav {
         cursor: pointer;
         .nav-item {
@@ -42,15 +83,14 @@ header {
                 color: $black;
             }
         }
-        &.mobile-manu {
-            display: none;
-        }
+
         @media (max-width: 576px) {
             &.desktop-manu {
                 display: none;
             }
         }
     }
+
     .menu {
         display: none;
         @media (max-width: 576px) {
