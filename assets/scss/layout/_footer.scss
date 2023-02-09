@@ -3,7 +3,12 @@ footer{
         .nav-item{
             cursor: pointer;
             &:hover{
-                color:$white !important;
+                color:  $white !important;
+            }
+            .social-media{
+                &:hover{
+                    background-color: $white !important;
+                }
             }
             .social-media{
                 &:hover{

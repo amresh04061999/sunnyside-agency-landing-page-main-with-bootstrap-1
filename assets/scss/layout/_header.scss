@@ -56,6 +56,13 @@ header {
                 padding: 1.5rem !important;
             }
         }
+        .mobile-manu{
+            display: none;
+    }
+       .checkbox:checked+.mobile-manu{
+        display: block;
+       }
+    
     }
     .logo {
         img {
@@ -65,7 +72,7 @@ header {
             }
         }
     }
-
+   
     .nav {
         cursor: pointer;
         .nav-item {
@@ -83,14 +90,15 @@ header {
                 color: $black;
             }
         }
-
+       
+       
         @media (max-width: 576px) {
             &.desktop-manu {
                 display: none;
             }
         }
     }
-
+   
     .menu {
         display: none;
         @media (max-width: 576px) {
